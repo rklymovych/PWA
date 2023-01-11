@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+#block-1 {
+    width: 200px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(1deg); */
+    /* animation:spin 60s linear infinite; */
+    transform-origin: bottom center;
+}
+
+.dot {
+    line-height: 1px;
+}
+
+.stick {
+    border: 2px solid green;
+    
+}
+#rect {
+    border: 1px solid red;
+}
+
+@keyframes spin { 
+    0% {transform: translate(50%, -50%) rotate(0deg); }
+    100% {transform: translate(50%, -50%) rotate(360deg); } 
+}
